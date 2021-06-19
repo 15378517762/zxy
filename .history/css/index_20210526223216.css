@@ -1,0 +1,21 @@
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+header {
+    background-color: aqua;
+}
+
+.headpic {
+    width: 100%;
+}
+
+article {
+    background-color: bisque;
+}
+
+aside {
+    background-color: burlywood;
+}

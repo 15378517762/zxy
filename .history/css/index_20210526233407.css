@@ -1,0 +1,38 @@
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+body {
+    background-color: #dbeff2;
+}
+
+.headNav {
+    background-color: cornflowerblue;
+}
+
+.sideNav {
+    /* background-color: aqua; */
+}
+
+.sideNav li{
+
+    list-style-type: none;
+}
+
+.headpic {
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+article {
+    background-color: bisque;
+}
+
+aside {
+    background-color: burlywood;
+}
