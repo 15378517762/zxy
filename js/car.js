@@ -71,13 +71,13 @@ $(function () {
     // 删除商品
     var delCount = 0
     $('.del-commodity').click(function () {
-         delCount++
+        delCount++
         $(this).parents('.whole-store').remove()
         $(this).parents('.single-commodity').remove()
         getSum()
     })
 
-    if(delCount===4){
+    if (delCount === 4) {
         $('.nothing').show()
     }
 
@@ -106,9 +106,21 @@ $(function () {
         $(this).parents('.row-bottom-lists').children('.row-bottom-like').show()
     })
 
-    $('.checkall-store').change(function(){
-        $(this).parent().siblings('.detailed').children('.chooseit').prop('checked',$(this).prop('checked'))
+    $('.checkall-store').change(function () {
+        $(this).parent().siblings('.detailed').children('.chooseit').prop('checked', $(this).prop('checked'))
     })
 
-    
+    $('.detailed,.single-commodity').mouseover(function () {
+        $(this).css('background', '#fff')
+        $(this).css('box-shadow', 'inset 5px 5px 5px #bbb')
+    })
+
+    $('.detailed,.single-commodity').mouseout(function () {
+        $(this).css('background', '#dbeff2')
+        $(this).css('box-shadow', '0 0 0')
+    })
+
+    $('.del-commodity').mouseover(function () {
+        $(this).css('cursor', 'pointer')
+    })
 })
